@@ -1,0 +1,118 @@
+%-----------------------------------------
+% Michael Wright
+% Resumé
+%
+% URL: http://github.com/mdwrigh2/resume
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[margin]{res}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\setlength{\textwidth}{5.1in}
+\newsectionwidth{1in}
+
+% FONTS
+% FONTS
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+\setmonofont[Scale=0.8]{Monaco} 
+\setsansfont[Scale=0.9]{Optima Regular} 
+
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% HEADINGS
+%\usepackage{sectsty} 
+%\usepackage[normalem]{ulem} 
+%\sectionfont{\rmfamily\mdseries\Large} 
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, pdftitle={Michael Wright Resume},pdfauthor={Michael Wright}]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+\begin{document}
+
+
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Michael D. Wright}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{9500 Kingsford Dr.}
+ \moveleft.5\hoffset\centerline{Cary, NC 27518}
+ \moveleft.5\hoffset\centerline{(919) 656-4962}
+ 
+ \begin{resume}
+ 
+\section{\sc Objective}   
+ 
+
+\section{\sc Education} {\sl Bachelor of Science,} \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                North Carolina State University, Raleigh, NC, 
+                expected May 2012 \\
+                Concentration: Computer Science \\
+                Minor: Management 
+ 
+ 
+\section{\sc Computer \\ Skills} {\sl Languages \& Software:} COBOL, IFPS, Focus, 
+         Megacalc, Pascal, Modula2, C, APL, SNOBOL, 
+                FORTRAN, LISP, SPIRES, BASIC, VSPC Autotab, 
+                IBM 370 Assembler, Lotus 1-2-3. \\
+                {\sl Operating Systems:} MTS, TSO, Unix. 
+ 
+\section{\sc Experience} {\sl Business Applications Programmer} \hfill Fall 1990 \\
+                Allied-Signal Bendix Friction Materials Division, 
+                Financial Planning Department, Latham, NY 
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Developed four ``user friendly" forecasting 
+                    systems each of which produces 18 to 139 
+                    individual reports. 
+                \item   Developed or improved almost all IFPS 
+                    programs used for financial reports. 
+                \end{itemize}
+ 
+                {\sl Research Programmer} \hfill            Summer 1990 \\
+                Psychology Department, Rensselaer Polytechnic 
+                Institute 
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Performed computer aided statistical analysis 
+                    of data. 
+                 \end{itemize} 
+                {\sl Assistant Manager} \hfill        Summers 1988-89 \\
+                Thunder Restaurant, Canton, CT
+                  \begin{itemize}
+                   \item Recognized need for, developed, and wrote 
+                    employee training manual. Performed various 
+                    duties including cooking, employee training, 
+                    ordering, and inventory control. 
+                   \end{itemize} 
+ 
+\section{\sc Honors}  Organized and directed the 1988 and 1989 Grand 
+                 Marshall Week \newline ``Basketball Marathon.'' A 24 hour 
+                charity event to benefit the Troy Boys Club. Over 
+                250 people participated each year. 
+
+
+ 
+
+\end{resume}
+\end{document}
+
+
+

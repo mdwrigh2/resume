@@ -9,15 +9,16 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[margin]{res}
+\documentclass[11pt,letterpaper,final]{moderncv}
 \usepackage{fontspec}
+\moderncvtheme[darkred]{classic}
 
 % DOCUMENT LAYOUT
-\setlength{\textwidth}{5.1in}
-\newsectionwidth{1in}
-
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
 % FONTS
-% FONTS
+\usepackage[utf8]{inputenc}
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 
 % Remove % to set to different fonts
@@ -39,80 +40,65 @@
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
-\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, pdftitle={Michael Wright Resume},pdfauthor={Michael Wright}]{hyperref}  
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+
+% Personal Inofrmation
+\firstname{Michael}
+\familyname{Wright}
+\address{9500 Kingsford Dr.}{Cary, NC 27518}
+\mobile{(919) 656-4962}
+\email{mdwrigh2@ncsu.edu}
+\homepage{http://www.derefnull.com}
+
+\title{Michael Wright's Resume}
+
+\nopagenumbers{}
 
 \begin{document}
 
+\maketitle
+\section{Objective} To further myself as a computer scientist and programmer by participating in the architecture and development of interesting software projects and research.
 
-
-% Center the name over the entire width of resume:
- \moveleft.5\hoffset\centerline{\large\bf Michael D. Wright}
-% Draw a horizontal line the whole width of resume:
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
- \moveleft.5\hoffset\centerline{9500 Kingsford Dr.}
- \moveleft.5\hoffset\centerline{Cary, NC 27518}
- \moveleft.5\hoffset\centerline{(919) 656-4962}
- \moveleft.5\hoffset\centerline{mdwrigh2@ncsu.edu}
- 
- \begin{resume}
- 
-\section{\sc Objective} To further myself as a computer scientist and programmer by participating in the architecture and development of interesting software projects and research.
- 
-
-\section{\sc Education} {\sl Bachelor of Science,} \\
-                      % \sl will be bold italic in New Century Schoolbook (or
-	              % any postscript font) and just slanted in
-		      %	Computer Modern (default) font
-                North Carolina State University, Raleigh, NC, 
-                expected May 2012 \\
-                Concentration: Computer Science and Mathematics \\
-                GPA: 3.994 \\
-                CSC \& MA GPA: 4.0 \\
-\section{\sc Relevant \\ Courses} Operating Systems \\
-                                  Data Structures and Algorithms \\
-                                  C and Software Tools \\
- 
- 
-\section{\sc Computer \\ Skills} {\sl Languages:} Ruby, C, Python, Java\\
-	       {\sl Software:} Git, Subversion, Apache, MySQL, Capistrano, Mongrel, Monit, Chef, \LaTeX \\
-                {\sl Operating Systems:} Linux (Primarily Debian-based distrobutions), OS X, Windows, Xen, VMWare Server ESXi. \\
-                {\sl Development Styles:} Experienced in both waterfall and agile development methodologies.
- 
-\section{\sc Experience} 
-    {\sl Research Assistant} \hfill Summer 2010 - Current \\
-    North Carolina State University
-    With Dr. Jiang and the Systems Security Group
-    \begin{itemize} \itemsep -2pt % reduce space between items
+\section{Education}
+  \cventry{2008-2012 (expected)}{Computer Science \& Mathematics, NCSU}{Raleigh, NC}{}{3.994 Overall GPA}{CSC \& MA Majors GPA: 4.0}
+  \cvline{Relevant Courses:}{Operating Systems, Data Structures and Algorithms, Computer Algebra}
+%\section{Relevant Courses} 
+%  \cvlistitem{Operating Systems}
+%  \cvlistitem{Data Structures and Algorithms}
+%  \cvlistitem{C and Software Tools}
+\section{Computer Skills} 
+  \cvline{Languages:}{Ruby, C, Python, Java}
+  \cvline{Software:}{Git, Subversion, Apache, MySQL, Capistrano, Mongrel, Monit, Chef, \LaTeX}
+  \cvline{Operating Systems:}{Linux (Primarily Debian-based distrobutions), OS X, Windows, Xen, VMWare Server ESXi}
+  \cvline{Development Styles:}{Experienced in both waterfall and agile development methodologies}
+\section{Experience} 
+  \cventry{2010--Current}{Research Assistant}{Dr. Jiang, NCSU}{Raleigh, NC}{}{
+    %{Research Assistant} \hfill Summer 2010 - Current \\
+    %North Carolina State University
+    %With Dr. Jiang and the Systems Security Group
+    \begin{itemize}% \itemsep -2pt % reduce space between items
       \item Developed a framework to interpose advertisements interaction with webpages.
-      \item Gave presentations on papers and research proposals to the Systems Security group
-    \end{itemize}
-    {\sl Junior Developer/IT Intern} \hfill Summer 2008 - Spring 2010 \\
-		Futures Inc., Durham, NC
-    \begin{itemize}  \itemsep -2pt %reduce space between items
+      \item Gave presentations on papers and research proposals to the Systems Security group.
+    \end{itemize}}
+  \cventry{2008--2010}{Jr. Developer/IT Intern}{Futures, Inc.}{Durham, NC}{}{
+    %{Junior Developer/IT Intern} \hfill Summer 2008 - Spring 2010 \\
+		%Futures Inc., Durham, NC
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
         \item Aided in the design, and provided the implementation and support of a large scale (10,000+ initial users), Xen-virtualized server environment housing a rich internet web application.
 	      \item Gained software development experience via the completion of individual projects.
         \item Aided in the transfer from rented hardware running Xen instances, to
               Engine Yard's Amazon EC2-based cloud computing service.
-    \end{itemize}
-    {\sl Network Cabling Apprentice} \hfill            Summer 2007 \\
-    Trident Technology Solutions
-    \begin{itemize}  \itemsep -2pt %reduce space between items
+    \end{itemize}}
+  \cventry{Summer 2007}{Network Cabling Apprentice}{Trident Technology Solutions}{Raleigh, NC}{}{
+    %{Network Cabling Apprentice} \hfill            Summer 2007 \\
+    %Trident Technology Solutions
+    \begin{itemize}%  \itemsep -2pt %reduce space between items
       \item Built server racks, mounted cable trays, and ran network cables within newly built data centers.
-    \end{itemize} 
- 
-\section{\sc Extra}
-  Volunteer for CarolinaCon, a regional technology conference from 2005 - 2007\\
-  Dean's List every semester\\
-  Active Member of the NCSU Linux User Group\\
-  Contributor to open source projects - see http://github.com/mdwrigh2
-
- 
-
-\end{resume}
+    \end{itemize} }
+    
+\section{Extra}
+  \cvlistitem{Volunteer for CarolinaCon, a regional technology conference from 2005 - 2007}
+  \cvlistitem{Dean's List every semester}
+  \cvlistitem{Active Member of the NCSU Linux User Group}
+  \cvlistitem{Contributor to open source projects - see http://github.com/mdwrigh2}
 \end{document}
-
-
-

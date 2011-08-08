@@ -310,7 +310,7 @@
 
 % usage: \section{<title>}
 \newcommand*{\section}[1]{%
-  \vspace*{2.5ex}%
+  \vspace*{1ex}%
   \parbox[m]{\hintscolumnwidth}{\raggedleft\hintfont{\color{sectionrectanglecolor}\rule{\hintscolumnwidth}{1ex}}}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{part}{#1}%

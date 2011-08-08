@@ -31,12 +31,6 @@
 % ---- MARGIN YEARS
 %\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
 
-% HEADINGS
-%\usepackage{sectsty} 
-%\usepackage[normalem]{ulem} 
-%\sectionfont{\rmfamily\mdseries\Large} 
-%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
-%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
@@ -48,7 +42,7 @@
 \address{9500 Kingsford Dr.}{Cary, NC 27518}
 \mobile{(919) 656-4962}
 \email{mdwrigh2@ncsu.edu}
-\homepage{http://www.derefnull.com/about}
+\homepage{www.derefnull.com/about}
 
 \title{Michael Wright's Resume}
 
@@ -57,40 +51,47 @@
 \begin{document}
 
 \maketitle
-\section{Objective} To further myself as a computer scientist and programmer by participating in the architecture and development of interesting software projects and research.
+\section{Objective}
+To further myself as a computer scientist and programmer by participating in the architecture and development of interesting software projects and research.
 
 \section{Education}
-  \cventry{2008-2012 (expected)}{Computer Science \& Mathematics, NCSU}{Raleigh, NC}{}{3.974 Overall GPA}{CSC \& MA Majors GPA: 4.0}
+  \cventry{2008-2012 (expected)}{Computer Science \& Mathematics, NCSU}{Raleigh, NC}{}{Overall GPA: 3.974}{CSC \& MA Majors GPA: 4.0}
   \cvline{Relevant Courses:}{Operating Systems, Data Structures, Computer Algebra (Graduate), Compilers (Graduate)}
-
-\section{Computer Skills}
-  \cvline{Languages:}{Python, Java, Ruby, C}
-  \cvline{Software:}{Git, Subversion, Apache, MySQL, Capistrano, Mongrel, Monit, Chef, \LaTeX}
-  \cvline{Operating Systems:}{Linux (Primarily Debian-based distributions), OS X, Windows, Xen, VMWare ESXi}
-\section{Experience}
-  \cventry{Summer 2011}{Technical Solutions Engineering Intern}{Google}{Mountain View, CA}{} {
+\section{Computer Skills} 
+  \cvline{Languages:}{Python, Java, Ruby, JavaScript, C}
+  \cvline{Software:}{Git, Subversion, Apache, MySQL, Chef, \LaTeX}
+  \cvline{Operating Systems:}{Linux (Primarily Debian-based distributions), OS X, Windows, Xen}
+\section{Experience} 
+  \cventry{Summer 2011}{Technical Solutions Engineering Intern}{Google}{Mountain View, CA}{}{
     \begin{itemize}
-        \item Done stuff
+      \item Extracted ChimpChat, a Java library for interfacing with the Monkey testing tool, from
+      the MonkeyRunner tool.
+      \item Added view introspection functionality to Monkey, ChimpChat and MonkeyRunner.
+      \item Refactored the Android Partner Frontend device display page to utilize a different backend 
+      and added pagination to it and the search results page.
+      \item Worked on an SFTP server backed by Google technologies and infrastructure, improving read performance by 4x and implementing proper access control
     \end{itemize}
   }
-  \cventry{Summer 2010--\\January 2011}{Research Professional}{Dr. Jiang, NCSU}{Raleigh, NC}{}{
+  \cventry{May 2010 --\\January 2011}{Research Professional}{Dr. Jiang, NCSU}{Raleigh, NC}{}{
     \begin{itemize}% \itemsep -2pt % reduce space between items
       \item Developed a framework to interpose advertisement's interaction with webpages.
       \item Gave presentations on papers and research proposals to the Systems Security group.
-    \end{itemize}}
-  \cventry{Summer 2008--\\Spring 2010}{Jr. Developer/IT Intern}{Futures, Inc.}{Durham, NC}{}{
+    \end{itemize}
+  }
+  \cventry{2008--2010}{Jr. Developer/IT Intern}{Futures, Inc.}{Durham, NC}{}{
     \begin{itemize}%  \itemsep -2pt %reduce space between items
         \item Aided in the design, and provided the implementation and support of a large scale (10,000+ initial users), Xen-virtualized server environment housing a rich internet web application.
-        \item Gained software development experience via the completion of individual projects.
-    \end{itemize}}
+	      \item Developed a custom continuous integration server that interfaced with our git repositories.
+    \end{itemize}
+  }
   \cventry{Summer 2007}{Network Cabling Apprentice}{Trident Technology Solutions}{Raleigh, NC}{}{
     \begin{itemize}%  \itemsep -2pt %reduce space between items
       \item Built server racks, mounted cable trays, and ran network cables within newly built data centers.
-    \end{itemize} }
-    
+    \end{itemize}
+  }
 \section{Extra}
+  \cvlistitem{Contributor to open source projects - see \url{https://github.com/mdwrigh2}}
+  \cvlistitem{Vice President of the NCSU Linux User Group}
+  \cvlistitem{Google Student Ambassador}
   \cvlistitem{Volunteer for CarolinaCon, a regional technology conference from 2005 - 2007}
-  \cvlistitem{Dean's List every semester}
-  \cvlistitem{Active Member of the NCSU Linux User Group}
-  \cvlistitem{Contributor to open source projects - see \url{http://github.com/mdwrigh2}}
 \end{document}

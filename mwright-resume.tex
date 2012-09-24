@@ -36,7 +36,7 @@
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 
 
-% Personal Inofrmation
+% Personal Information 
 \firstname{Michael}
 \familyname{Wright}
 \address{9500 Kingsford Dr.}{Cary, NC 27518}
@@ -51,16 +51,19 @@
 \begin{document}
 
 \maketitle
-%\section{Objective}
-%To push the envelope of technology by working on the most important platform yet, mobile.\\
 
 \section{Education}
-\cventry{Fall 2008 - Winter 2012 (expected)}{Computer Science \& Mathematics, North Carolina State University}{Raleigh, NC}{}{Overall GPA: 3.974}{CSC \& MA Majors GPA: 4.0}
+\cventry{Fall 2008 - Winter 2012 (expected)}{Computer Science \& Mathematics, North Carolina State University}{Raleigh, NC}{}{Overall GPA: 3.949}{CSC \& MA Majors GPA: 4.0}
 \section{Computer Skills} 
-  \cvline{Languages:}{Python, Java, Ruby, JavaScript, C}
-  \cvline{Software:}{Git, Subversion, Apache, MySQL, Chef, \LaTeX, Xen}
-  \cvline{Operating Systems:}{Linux (Primarily Debian-based distributions), OS X, Windows}
+  \cvline{Languages:}{Python, Java, Go, JavaScript, C}
 \section{Experience} 
+  \cventry{Summer 2012}{Software Engineering Intern}{Google}{Mountain View, CA}{}{
+    \begin{itemize}
+      \item Rewrote Android Virtual Device (AVD) creation and management tools to focus on physical device specifications rather than the emulator's implementation details, allowing developers to create AVDs based on existing, real-world devices.
+      \item Implemented an Android application that generated device specifications for use with the new toolset.
+      \item Worked on an internal, company-wide communication app for Android as a side-project with another intern. Its design and implementation received positive remarks from a number of people, including Matias Duarte, Director of Android UI/UX.
+    \end{itemize}
+  }
   \cventry{Fall 2011}{Senior Design Team Lead}{Johns Hopkins University Applied Physics Lab}{}{}{
     \begin{itemize}
       \item Developed a library for seamlessly interacting with Flicker, a project that allows for running trusted code modules on top of an extremely small trusted computing base.
@@ -70,11 +73,8 @@
   }
   \cventry{Summer 2011}{Technical Solutions Engineering Intern}{Google}{Mountain View, CA}{}{
     \begin{itemize}
-      \item Extracted ChimpChat, a Java library for interfacing with the Monkey testing tool, from
-      the MonkeyRunner tool.
+      \item Extracted ChimpChat, a Java library for interfacing with the Monkey tool, from MonkeyRunner.
       \item Added view introspection functionality to Monkey, ChimpChat and MonkeyRunner.
-      \item Refactored the Android Partner Frontend device display page to utilize a different
-      backend service and added pagination to it and the search results page.
       \item Worked on an SFTP server backed by Google technologies and infrastructure, improving read performance by 4x and implementing proper access control.
     \end{itemize}
   }
@@ -94,5 +94,5 @@
   \cvlistitem{Contributor to open source projects - see \url{https://github.com/mdwrigh2}}
   \cvlistitem{President of the NCSU Linux User Group}
   \cvlistitem{Google Student Ambassador}
-  \cvlistitem{Volunteer for CarolinaCon, a regional technology conference, from 2005 - 2007}
+  \cvlistitem{Winner of NCSU XCDC}
 \end{document}
